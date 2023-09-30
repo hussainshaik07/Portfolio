@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.span-ele {
+    color: blue;
+    font-size: 30px;
+}
+
+.span-ele:hover {
+    color: red;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.nav-link {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.home-text {
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.span-text {
+    background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.profile-img {
+    margin-top: 10%;
+    height: 350px;
+    border-radius: 200px;
+    margin-bottom: 5%;
+}
+
+.aboutme-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.aboutme-container h1 {
+    margin-left: 10px;
+    background: linear-gradient(to right, #F06, #F96);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.about-text-container {
+    border-left: 2px solid red;
+    padding: 30px;
+    margin: 55px;
+}
+
+.about-text-container h1 {
+    font-size: 25px;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hori-line {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.edu-head {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 15px;
+    background: linear-gradient(to right, #F06, #F96);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.first-card {
+    border-left: 10px solid red;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.education-details h1 {
+    font-size: 35px;
+}
+
+.education-details h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(172 172 172);
+}
+
+.education-details h2 {
+    font-size: 30px;
+    color: rgb(172 172 172);
+}
+
+.second-card {
+    border-left: 2px solid rgb(201, 203, 27);
+    border-right: 10px solid rgb(201, 203, 27);
+    border-bottom: 2px solid rgb(201, 203, 27);
+    border-top: 2px solid rgb(201, 203, 27);
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-right: 30px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.third-card {
+    border-left: 10px solid blue;
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.fourth-card {
+    border-left: 2px solid rgb(77, 217, 77);
+    border-right: 10px solid rgb(77, 217, 77);
+    border-bottom: 2px solid rgb(77, 217, 77);
+    border-top: 2px solid rgb(77, 217, 77);
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-right: 30px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-1 {
+    float: left;
+    margin-left: 20%;
+    background-color: #fff;
+    margin-bottom: 40px;
+    color: #000;
+    border-radius: 15px;
+    transition: transform .5s;
+
+
+}
+
+.card-1:hover {
+    background-color: bisque;
+    transition: 1s;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card-1 img {
+    width: 70%;
+}
+
+.card-2 {
+    float: right;
+    margin-right: 20%;
+    background-color: #fff;
+    margin-bottom: 40px;
+    color: #000;
+    border-radius: 15px;
+    transition: transform .5s;
+}
+
+.card-2:hover {
+    background-color: bisque;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card-2 img {
+    width: 70%;
+}
+
+
+
+.exp-card-1 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 3px rgb(44 214 191),-5px -5px 3px rgb(44 214 191);
+}
+
+.exp-card-1 h1 {
+    font-size: 30px;
+}
+
+.exp-card-1 h2 {
+    font-size: 20px;
+}
+
+.exp-card-1 h3 {
+    font-size: 20px;
+}
+
+.exp-card-1:hover {
+    transition: 1s;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.project-card {
+    border-left: 2px solid rgb(210, 13, 13);
+    padding: 20px;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.project-img {
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 200px;
+}
+
+.Netflix-head {
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+
+.visit-btn {
+    margin-left: 20px;
+}
+
+.modal-body ul li {
+    text-align: justify;
+}
+
+.input-ele {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.icon {
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 10px;
+    transition: transform 1s;
+}
+
+.icon:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+span i {
+    color: rgb(221, 27, 27);
+}
+
+.text-area-cont-sm {
+    display: block;
+}
+
+.text-area-cont-md {
+    display: none;
+}
+
+@media only screen and (max-width:576px) {
+    .home-text {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .span-text {
+        background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Roboto;
+        margin-top: 10px;
+    }
+
+    .profile-img {
+        margin-top: 25%;
+        height: 300px;
+        border-radius: 200px;
+        margin-bottom: 5%;
+    }
+
+    .about-text-container {
+        border-left: 2px solid red;
+        padding: 10px;
+        margin: 25px;
+    }
+
+    .about-text-container h1 {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+
+    .edu-head {
+        font-size: 25px;
+    }
+
+    .first-card {
+        border-left: 7px solid red;
+        border-top: 2px solid red;
+        border-right: 2px solid red;
+        border-bottom: 2px solid red;
+        border-radius: 15px;
+        margin-top: 30px;
+        margin-left: 15px;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .education-details h1 {
+        font-size: 17px;
+    }
+
+    .education-details h3 {
+        font-size: 13px;
+        font-weight: 500;
+        color: rgb(172 172 172);
+    }
+
+    .education-details h2 {
+        font-size: 15px;
+        color: rgb(172 172 172);
+    }
+
+    .second-card {
+        border-left: 2px solid rgb(201, 203, 27);
+        border-right: 7px solid rgb(201, 203, 27);
+        border-bottom: 2px solid rgb(201, 203, 27);
+        border-top: 2px solid rgb(201, 203, 27);
+        border-radius: 15px;
+        margin-top: 30px;
+        margin-right: 15px;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .third-card {
+        border-left: 7px solid blue;
+        border-top: 2px solid blue;
+        border-right: 2px solid blue;
+        border-bottom: 2px solid blue;
+        border-radius: 15px;
+        margin-top: 30px;
+        margin-right: 15px;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .fourth-card {
+        border-left: 2px solid rgb(77, 217, 77);
+        border-right: 10px solid rgb(77, 217, 77);
+        border-bottom: 2px solid rgb(77, 217, 77);
+        border-top: 2px solid rgb(77, 217, 77);
+        border-radius: 15px;
+        margin-top: 30px;
+        margin-right: 15px;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .card-1 {
+        float: left;
+        margin-left: 0%;
+        border-radius: 10px;
+    }
+
+    .card-1:hover {
+        background-color: bisque;
+        transform: translateY(-5px);
+        cursor: pointer;
+    }
+
+    .card-1 img {
+        width: 75%;
+    }
+
+    .card-1 h1 {
+        font-size: 20px;
+    }
+
+    .card-2 {
+        float: right;
+        margin-right: 0%;
+        border-radius: 10px;
+    }
+
+    .card-2 h1 {
+        font-size: 20px;
+    }
+
+    .card-2:hover {
+        background-color: bisque;
+        transform: translateY(-5px);
+        cursor: pointer;
+    }
+
+    .card-2 img {
+        width: 75%;
+    }
+
+    .exp-card-1 {
+        border: 2px solid rgb(44 214 191);
+        text-align: center;
+        padding: 20px;
+        border-radius: 15px;
+        transition: transform .5s;
+    }
+
+    .exp-card-1 h1 {
+        font-size: 20px;
+    }
+
+    .exp-card-1 h2 {
+        font-size: 13px;
+    }
+
+    .exp-card-1 h3 {
+        font-size: 13px;
+    }
+
+    .exp-card-1:hover {
+        transition: 1s;
+        transform: translateY(-5px);
+        cursor: pointer;
+    }
+
+    .project-card {
+        border-left: 2px solid red;
+        padding: 20px;
+        align-items: center;
+        margin-left: 2%;
+    }
+
+    .project-img {
+        margin-right: 20px;
+        margin-left: 0px;
+        width: 80px;
+    }
+
+    .Netflix-head {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .visit-btn {
+        margin-left: 10px;
+        font-size: 11px;
+    }
+
+    .btn-success {
+        font-size: 11px;
+    }
+
+    .modal-body ul li {
+        text-align: justify;
+    }
+
+    .input-ele {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 25px;
+    }
+
+    .text-area-cont-sm {
+        display: none;
+    }
+
+    .text-area-cont-md {
+        display: inline-block;
+        padding: 10px;
+    }
+
+
+
+}
